@@ -10,4 +10,4 @@ rvm:
   - 2.6.1
   - ruby-head
 
-script: rake test
+script: bundle exec rake test
