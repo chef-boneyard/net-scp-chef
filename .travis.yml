@@ -10,5 +10,9 @@ rvm:
   - 2.6.1
   - ruby-head
 
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+
 install: gem install test-unit mocha net-ssh
 script: rake test
