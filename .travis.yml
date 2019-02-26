@@ -10,4 +10,5 @@ rvm:
   - 2.6.1
   - ruby-head
 
-script: bundle exec rake test
+install: gem install test-unit mocha net-ssh
+script: rake test
