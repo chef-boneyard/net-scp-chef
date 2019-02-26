@@ -17,8 +17,8 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.3"
 
-  spec.add_runtime_dependency("net-ssh", [">= 2.6.5", "< 6.0.0"])
-  spec.add_development_dependency("test-unit")
-  spec.add_development_dependency("mocha")
-
+  spec.add_runtime_dependency "net-ssh", ">= 2.6.5", "< 6.0.0"
+  spec.add_development_dependency "test-unit"
+  spec.add_development_dependency "mocha"
+  spec.add_development_dependency "rake", ">= 12.0"
 end
