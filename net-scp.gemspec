@@ -2,14 +2,14 @@
 require_relative 'lib/net/scp/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "net-scp"
+  spec.name          = "net-scp-chef"
   spec.version       = Net::SCP::Version::STRING
-  spec.authors       = ["Jamis Buck", "Delano Mandelbaum", "Mikl\u{f3}s Fazekas"]
-  spec.email         = ["net-ssh@solutious.com"]
+  spec.authors       = ["Chef Software, Inc."]
+  spec.email         = ["info@chef.io"]
 
-  spec.summary       = %q{A pure Ruby implementation of the SCP client protocol.}
-  spec.description   = %q{A pure Ruby implementation of the SCP client protocol}
-  spec.homepage      = "https://github.com/net-ssh/net-scp"
+  spec.summary       = %q{A fork of the net-scp gem that allows for the latest net-ssh gem as a dependency.}
+  spec.description   = %q{A fork of the net-scp gem that allows for the latest net-ssh gem as a dependency.}
+  spec.homepage      = "https://github.com/chef/net-scp-chef"
   spec.license       = "MIT"
 
   spec.extra_rdoc_files = [
