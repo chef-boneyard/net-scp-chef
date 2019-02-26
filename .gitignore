@@ -2,5 +2,5 @@ coverage
 pkg
 doc
 *.swp
-
+Gemfile.lock
 .DS_Store
