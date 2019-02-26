@@ -45,4 +45,5 @@ Gem::Specification.new do |spec|
     spec.add_dependency(%q<test-unit>, [">= 0"])
     spec.add_dependency(%q<mocha>, [">= 0"])
   end
+  spec.required_ruby_version = ">= 2.3"
 end
