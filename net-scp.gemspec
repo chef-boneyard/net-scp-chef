@@ -11,7 +11,6 @@ Gem::Specification.new do |spec|
   spec.description   = %q{A pure Ruby implementation of the SCP client protocol}
   spec.homepage      = "https://github.com/net-ssh/net-scp"
   spec.license       = "MIT"
-  spec.required_rubygems_version = Gem::Requirement.new(">= 0") if spec.respond_to? :required_rubygems_version=
 
   spec.extra_rdoc_files = [
     "LICENSE.txt",
@@ -23,22 +22,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  if spec.respond_to? :specification_version then
-    spec.specification_version = 3
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      spec.add_runtime_dependency(%q<net-ssh>, [">= 2.6.5", "< 5.0.0"])
-      spec.add_development_dependency(%q<test-unit>, [">= 0"])
-      spec.add_development_dependency(%q<mocha>, [">= 0"])
-    else
-      spec.add_dependency(%q<net-ssh>, [">= 2.6.5", "< 5.0.0"])
-      spec.add_dependency(%q<test-unit>, [">= 0"])
-      spec.add_dependency(%q<mocha>, [">= 0"])
-    end
-  else
-    spec.add_dependency(%q<net-ssh>, [">= 2.6.5", "< 5.0.0"])
-    spec.add_dependency(%q<test-unit>, [">= 0"])
-    spec.add_dependency(%q<mocha>, [">= 0"])
-  end
   spec.required_ruby_version = ">= 2.3"
+
+  spec.add_runtime_dependency(%q<net-ssh>, [">= 2.6.5", "< 6.0.0"])
+  spec.add_development_dependency(%q<test-unit>, [">= 0"])
+  spec.add_development_dependency(%q<mocha>, [">= 0"])
+
 end
