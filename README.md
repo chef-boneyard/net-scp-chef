@@ -1,28 +1,20 @@
-= Net::SCP
-
-<em><b>Please note: this project is in maintenance mode. It is not under active development but pull requests are very much welcome. Just be sure to include tests! -- delano</b></em>
-
+# Net::SCP
 
 * Docs: http://net-ssh.github.com/net-scp
 * Issues: https://github.com/net-ssh/net-scp/issues
 * Codes: https://github.com/net-ssh/net-scp
 * Email: net-ssh@solutious.com
 
-<em>As of v1.0.5, all gem releases are signed. See INSTALL.</em>
-
-
-== DESCRIPTION:
-
 Net::SCP is a pure-Ruby implementation of the SCP protocol. This operates over SSH (and requires the Net::SSH library), and allows files and directory trees to be copied to and from a remote server.
 
-== FEATURES/PROBLEMS:
+## FEATURES/PROBLEMS:
 
 * Transfer files or entire directory trees to or from a remote host via SCP
 * Can preserve file attributes across transfers
 * Can download files in-memory, or direct-to-disk
 * Support for SCP URI's, and OpenURI
 
-== SYNOPSIS:
+## SYNOPSIS:
 
 In a nutshell:
 
@@ -61,7 +53,7 @@ In a nutshell:
 
 For more information, see Net::SCP.
 
-== REQUIREMENTS:
+## REQUIREMENTS:
 
 * Net::SSH 2
 
@@ -70,7 +62,7 @@ If you wish to run the tests, you'll also need:
 * Echoe (for Rakefile use)
 * Mocha (for tests)
 
-== INSTALL:
+## INSTALL:
 
 * gem install net-scp (might need sudo privileges)
 
@@ -87,14 +79,7 @@ Then, when install the gem, do so with high security:
 
 If you don't add the public key, you'll see an error like "Couldn't verify data signature". If you're still having trouble let me know and I'll give you a hand.
 
-Or, you can do it the hard way (without Rubygems):
-
-* tar xzf net-scp-*.tgz
-* cd net-scp-*
-* ruby setup.rb config
-* ruby setup.rb install (might need sudo privileges)
-
-== LICENSE:
+## LICENSE:
 
 (The MIT License)
 
