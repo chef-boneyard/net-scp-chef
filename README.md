@@ -1,20 +1,22 @@
 # Net::SCP
 
-* Docs: http://net-ssh.github.com/net-scp
-* Issues: https://github.com/net-ssh/net-scp/issues
-* Codes: https://github.com/net-ssh/net-scp
-* Email: net-ssh@solutious.com
+* Issues: https://github.com/chef/net-scp-chef/issues
+* Codes: https://github.com/chef/net-scp-chef/
 
 Net::SCP is a pure-Ruby implementation of the SCP protocol. This operates over SSH (and requires the Net::SSH library), and allows files and directory trees to be copied to and from a remote server.
 
-## FEATURES/PROBLEMS:
+## About this Fork
+
+This is a fork of https://github.com/net-ssh/net-scp/ that has been mildly cleanup up, but more importantly allows for the usage of net-ssh 5.x. We commit to investing in the continued maintenance of this gem for its existing use case.
+
+## Features
 
 * Transfer files or entire directory trees to or from a remote host via SCP
 * Can preserve file attributes across transfers
 * Can download files in-memory, or direct-to-disk
 * Support for SCP URI's, and OpenURI
 
-## SYNOPSIS:
+## Synopsis
 
 In a nutshell:
 
@@ -53,37 +55,20 @@ In a nutshell:
 
 For more information, see Net::SCP.
 
-## REQUIREMENTS:
+## Requirements
 
-* Net::SSH 2
+* Net::SSH
 
-If you wish to run the tests, you'll also need:
+## Install
 
-* Echoe (for Rakefile use)
-* Mocha (for tests)
+* gem install net-scp-chef (might need sudo privileges)
 
-## INSTALL:
-
-* gem install net-scp (might need sudo privileges)
-
-However, in order to be sure the code you're installing hasn't been tampered with, it's recommended that you verify the signiture[http://docs.seattlerb.org/rubygems/Gem/Security.html]. To do this, you need to add my public key as a trusted certificate (you only need to do this once):
-
-    # Add the public key as a trusted certificate
-    # (You only need to do this once)
-    $ curl -O https://raw.github.com/net-ssh/net-ssh/master/gem-public_cert.pem
-    $ gem cert --add gem-public_cert.pem
-
-Then, when install the gem, do so with high security:
-
-    $ gem install net-scp -P HighSecurity
-
-If you don't add the public key, you'll see an error like "Couldn't verify data signature". If you're still having trouble let me know and I'll give you a hand.
-
-## LICENSE:
+## License
 
 (The MIT License)
 
 Copyright (c) 2008 Jamis Buck <jamis@37signals.com>
+Copyright (c) 2019 Chef Software
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
