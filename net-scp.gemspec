@@ -7,11 +7,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jamis Buck", "Delano Mandelbaum", "Mikl\u{f3}s Fazekas"]
   spec.email         = ["net-ssh@solutious.com"]
 
-  if ENV['NET_SSH_BUILDGEM_SIGNED']
-    spec.cert_chain = ["net-scp-public_cert.pem"]
-    spec.signing_key = "/mnt/gem/net-ssh-private_key.pem"
-  end
-
   spec.summary       = %q{A pure Ruby implementation of the SCP client protocol.}
   spec.description   = %q{A pure Ruby implementation of the SCP client protocol}
   spec.homepage      = "https://github.com/net-ssh/net-scp"
